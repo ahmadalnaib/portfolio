@@ -17,3 +17,51 @@ $gray-text:#2c2c2c;
 
 @import 'global';
 @import 'showcase';
+
+
+@media screen and (max-width:1332px)
+{
+  html {
+    font-size: 53%;
+  }
+  svg {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width:754px)
+{
+  html {
+    font-size: 45%;
+  }
+
+  nav{
+
+    .logo {
+      @include flex(center,center,column);
+    }
+  }
+
+  .showcase-text{
+    text-align: center;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width:640px)
+{
+
+  html {
+    font-size: 40%;
+  }
+  .showcase-img{
+    display: none;
+  }
+
+  .showcase-text{
+    text-align: center;
+    margin-top: 5rem;
+  }
+}

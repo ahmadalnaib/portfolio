@@ -1,13 +1,15 @@
 #main-header{
   width: 95%;
   margin: 0 0 0 auto;
+  
 }
 
 nav {
   @include flex(space-between, center,row);
   min-height: 10vh;
-  width: 60%;
+  width: 100%;
   flex-wrap: wrap;
+  
   
 
 
@@ -27,13 +29,14 @@ nav {
   @include flex(space-between,center,row);
   min-height: 90vh;
   width: 90%;
-  margin: auto;
+  margin: 30px auto;
   flex-wrap: wrap;
   
 
   h2 {
     font-size: 8rem;
     padding-top: 2rem;
+    font-family: 'Lemonada', cursive;
    
   }
   h3 {
@@ -48,19 +51,23 @@ nav {
 }
 
 .showcase-img {
-  position: absolute;
- top:7%;
-  right: -4%; 
- 
-  height: 100%;
-  z-index: -1;
+//   position: absolute;
+//  top:20%;
+//   right: -4%; 
+//   height: 100%;
+//   z-index: -1;
   flex:  1 1 40rem;
 
 }
 
 .showcase-text{
+  flex: 2 1 40rem;
+}
+
+.showcase-img {
   flex: 1 1 40rem;
 }
+
 
 
 .showcase-social {
@@ -92,7 +99,10 @@ nav {
    }
 
    #b2 {
-   animation: ball 1.5s ease infinite alternate 0.5s;
+   animation: ball2 1.5s  infinite  linear;
+   transform-box: fill-box;
+   transform-origin: bottom;
+   
    }
 
    @keyframes ball {
@@ -102,4 +112,14 @@ nav {
       to {
         transform: translateY(30%);
       }
+   }
+
+
+   @keyframes ball2 {
+     from{
+       transform: rotateZ(0deg);
+
+     } to {
+     transform: rotateZ(360deg);
+     }
    }
