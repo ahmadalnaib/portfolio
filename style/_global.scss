@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 
 html {
   font-size: 62.5%;
@@ -11,9 +15,31 @@ html {
 
 ul {
   list-style: none;
+  font-size: 2rem;
 }
 
 a{
   text-decoration: none;
-  color: #000;
+  color: $gray-text;
 }
+
+h1 {
+  font-size: $header1;
+}
+
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4 {
+  font-size: $header4;
+}
+
